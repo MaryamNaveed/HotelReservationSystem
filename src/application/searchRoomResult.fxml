@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MySearchRoomResult" prefHeight="477.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.searchRoomResultController">
+   <children>
+      <ImageView fitHeight="456.0" fitWidth="483.0" layoutX="7.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <Text layoutX="165.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Available Rooms" wrappingWidth="222.99999997019768">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Button layoutX="359.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchtosearchRoom" prefHeight="33.0" prefWidth="91.0" text="Back" />
+      <GridPane fx:id="g" layoutX="13.0" layoutY="190.0" prefHeight="98.0" prefWidth="464.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="43.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="26.0" prefWidth="85.0" text="Room Id">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="85.0" text="Floor" GridPane.columnIndex="1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="85.0" text="Type" GridPane.columnIndex="3">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label prefHeight="26.0" prefWidth="85.0" text="Price" GridPane.columnIndex="2">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="135.0" fitWidth="159.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@anpaghar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

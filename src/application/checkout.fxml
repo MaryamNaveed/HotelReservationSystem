@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MyForm" prefHeight="535.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.checkoutcontroller">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="5.0" prefHeight="525.0" prefWidth="568.0">
+         <children>
+            <ImageView fitHeight="433.0" fitWidth="546.0" layoutX="13.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bg.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="204.0" fitWidth="179.0" layoutX="15.0" layoutY="-12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@anpaghar.png" />
+               </image>
+            </ImageView>
+            <Text fill="#b22c2c" layoutX="205.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CheckOut  Form" wrappingWidth="316.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="41.0" />
+               </font>
+            </Text>
+            <Text fill="#a41b1b" layoutX="104.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservationin  ID " wrappingWidth="159.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="id" layoutX="285.0" layoutY="199.0" prefHeight="13.0" prefWidth="226.0" />
+            <Text fill="#a41b1b" layoutX="104.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CheckIn ID" wrappingWidth="159.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="c_id" layoutX="285.0" layoutY="231.0" prefHeight="13.0" prefWidth="226.0" />
+            <Button layoutX="353.0" layoutY="483.0" mnemonicParsing="false" onAction="#GotoCheckOut" text="CashPayment" textFill="#942626">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="217.0" layoutY="483.0" mnemonicParsing="false" onAction="#GotoCheckOutCard" text="CardPayment" textFill="#9e2828">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="116.0" layoutY="483.0" mnemonicParsing="false" onAction="#Switchtomenu" prefHeight="31.0" prefWidth="68.0" text="Back" textFill="#941b1b">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <DatePicker fx:id="cDate" layoutX="296.0" layoutY="302.0" prefHeight="25.0" prefWidth="211.0" />
+            <Text fill="#a41b1b" layoutX="104.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="159.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

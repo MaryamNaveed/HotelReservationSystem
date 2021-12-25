@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.makereservation">
+   <children>
+      <AnchorPane layoutX="-63.0" layoutY="-120.0" prefHeight="665.0" prefWidth="682.0">
+         <children>
+            <ImageView fitHeight="394.0" fitWidth="557.0" layoutX="97.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bg.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="97.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@anpaghar.png" />
+               </image>
+            </ImageView>
+            <Text fill="#bf3131" layoutX="300.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reservation Form" wrappingWidth="288.9999907016754">
+               <font>
+                  <Font name="System Italic" size="37.0" />
+               </font>
+            </Text>
+            <Text fill="#a41010" layoutX="109.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="125.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="name" layoutX="205.0" layoutY="281.0" prefHeight="25.0" prefWidth="188.0" />
+            <Text fill="#a41010" layoutX="109.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="125.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="email" layoutX="205.0" layoutY="319.0" prefHeight="25.0" prefWidth="188.0" />
+            <Text fill="#a41010" layoutX="109.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address:" wrappingWidth="125.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="address" layoutX="206.0" layoutY="349.0" prefHeight="62.0" prefWidth="188.0" />
+            <Text fill="#a41010" layoutX="109.0" layoutY="613.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NoofGuests:" wrappingWidth="125.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nguests" layoutX="236.0" layoutY="593.0" prefHeight="25.0" prefWidth="114.0" />
+            <Text fill="#a41010" layoutX="109.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NoofRooms:" wrappingWidth="125.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="nrooms" layoutX="234.0" layoutY="475.0" prefHeight="25.0" prefWidth="98.0" />
+            <DatePicker fx:id="ArrivalDate" layoutX="119.0" layoutY="545.0" />
+            <Text fill="#a41010" layoutX="127.0" layoutY="535.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival Date:" wrappingWidth="125.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="DepartureDate" layoutX="433.0" layoutY="545.0" />
+            <Text fill="#a41010" layoutX="433.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure Date:" wrappingWidth="149.99999070167542">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <Button blendMode="MULTIPLY" layoutX="550.0" layoutY="594.0" mnemonicParsing="false" onAction="#Reserve" prefHeight="25.0" prefWidth="98.0" text="Reserve" textFill="#2e0303" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button blendMode="MULTIPLY" layoutX="440.0" layoutY="594.0" mnemonicParsing="false" onAction="#Switchtomenu" prefHeight="25.0" prefWidth="98.0" text="Back" textFill="#2e0303" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="r1" layoutX="463.0" layoutY="324.0" mnemonicParsing="false" text="Base Level" />
+            <RadioButton fx:id="r2" layoutX="459.0" layoutY="359.0" mnemonicParsing="false" text="Little Bigger" />
+            <RadioButton fx:id="r3" layoutX="457.0" layoutY="392.0" mnemonicParsing="false" text="With Lounge" />
+            <RadioButton fx:id="r4" layoutX="460.0" layoutY="423.0" mnemonicParsing="false" text="Junior Suite" />
+            <RadioButton fx:id="r5" layoutX="454.0" layoutY="456.0" mnemonicParsing="false" text="The Suite" />
+            <RadioButton fx:id="r6" layoutX="455.0" layoutY="488.0" mnemonicParsing="false" text="Preidential Suite" />
+            <Text fill="#a41010" layoutX="426.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type:" wrappingWidth="125.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#a41010" layoutX="109.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:" wrappingWidth="125.13671875">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="phone" layoutX="205.0" layoutY="428.0" prefHeight="25.0" prefWidth="188.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
